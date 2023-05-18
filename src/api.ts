@@ -24,7 +24,7 @@ import { NATS_SERVER, PORT, SUBJECT } from './common/constants';
             
             // async call to helper method "request"
             const natsResponse = await natsConnection.request(SUBJECT,Buffer.from(symbol), {
-                // we want to timeout after 1s
+                // we want to timeout after 2.5s
                 timeout : 2500
             });
             

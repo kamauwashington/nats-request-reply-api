@@ -25,6 +25,15 @@ Before you continue, ensure you have met the following requirements:
 * Npm installed
 * Get a free [AlphaVantage](https://www.alphavantage.co/support/#api-key) key!
 
+## Environment Variables
+
+This repository uses dotenv, feel free to create a .env file to set the ALPHA_VANTAGE_KEY, or override other aspects of the program.
+
+* ALPHA_VANTAGE_KEY : The API Key provided by Alpha Vantage (defaults to **no-key**)
+* PORT : The port the express server should run on (defaults to **3000**)
+* SUBJECT : The Nats subject the Request/Reply will be issued on (defaults to **stock.request**)
+* NATS_SERVER : The Nats server that will be facilitating Pub-Sub (defaults to  **localhost**)
+
 ## Running the Application
 
 1) 'cd' to the root of this repository (where it was cloned)
