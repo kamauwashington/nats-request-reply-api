@@ -38,7 +38,7 @@ This repository uses dotenv, feel free to create a .env file to set the ALPHA_VA
 
 1) 'cd' to the root of this repository (where it was cloned)
 1) Create a file in the root named **.env**
-    * Add the AlphaVantage key in this file as follows : **ALPHA_VANTAGE_KEY=<insert key here>**
+    * Add the AlphaVantage key in this file as follows : **ALPHA_VANTAGE_KEY=< insert key here >**
 1) run **npm install** from the command line
 1) open a terminal to the root of this repository and run :
     * **npm run daily-adjusted-subscription**
