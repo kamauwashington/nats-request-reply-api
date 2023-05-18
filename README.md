@@ -7,11 +7,11 @@ or starting point for a production level implementation.
 This project illustrates the use of [Nats.io](https://nats.io/) built in [Request/Reply streaming pattern](https://docs.nats.io/nats-concepts/core-nats/reqreply) within an [ExpressJS]() API. The goal behind this implementation is to showcase a loosely coupled pub-sub Rest API pattern, wherein the implementation of an API request is handled by
 a subscriber.
 
-This pattern is useful in many ways, but a few freebies from this implementation :
+This pattern is useful in many ways, but there are a few freebies from this implementation :
 * Any programming language can use Nats.io API to initiate Request/Response directly with Nats.io bypassing HTTP entirely
 * The API can be written in NodeJS|Go|Python|Java|.NET Core, and the Subscriber can be written in NodeJS|Go|Python|Java|.NET Core
 * The subscriber can be swapped out and or A|B tested
-* The Nats Subject can be subscribed to (n) additional subscribers, for activities like logging, direct push to a DataLake, and so on.
+* The Nats Subject can be subscribed to by (n) additional subscribers, for activities like logging, direct push to a DataLake, and so on.
 
 > What will be seen in this example is a stock ticker being published to a Nats Subject, and Alpha Vantage Daily Adjusted API replying to the request token asynchronously.
 
