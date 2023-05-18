@@ -1,0 +1,24 @@
+{
+  "name": "nats-request-response",
+  "version": "1.0.0",
+  "description": "ExpressJS asyncronous pub-sub using Nats.io",
+  "scripts": {
+    "ts-node": "ts-node",
+    "api" : "ts-node -r dotenv/config ./src/api.ts",
+    "daily-adjusted-subscription" : "ts-node -r dotenv/config ./src/alpha-vantage/daily-adjusted.subscription.ts"
+  },
+  "author": "Kamau Washington",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.2.1",
+    "dotenv": "^16.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "nats": "^2.13.1"
+  }
+}
