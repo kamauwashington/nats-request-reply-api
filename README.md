@@ -45,14 +45,14 @@ This repository uses dotenv, feel free to create a .env file to set the ALPHA_VA
     * _allow the subscription a few additional seconds to bind, 503 errors may be experienced during this binding time_
 1) open a second terminal to the root of this repository and run :
     * **npm run api**
-1) open Postman or a browser and execute a GET to : 
+1) open Postman or a browser and execute a GET request to : 
     * **http://localhost:3000/stock-info?symbol=AAPL**
-    * THe symbol can be changed to get different results
+    * The symbol can be changed to get different results
 
 
 
 ## Notes
-* Notice that the API has no prior knowledge as to qhat the subscriber is going to provide
+* Notice that the API has no prior knowledge as to what the subscriber is going to provide
 * Validation can be put in place or a canonical can be used to ensure correctness of the reply
 * This repository is heavily commented to provide context as to what and why, if in VS Code feel free to collapse all comments if they are obtrusive
     * On Mac -> Press <kbd>&#8984;</kbd> + <kbd>K</kbd> then <kbd>&#8984;</kbd> + <kbd>/</kbd> 
