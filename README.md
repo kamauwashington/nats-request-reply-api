@@ -48,6 +48,7 @@ This repository uses dotenv, feel free to create a .env file to set the ALPHA_VA
 1) open Postman or a browser and execute a GET request to : 
     * **http://localhost:3000/stock-info?symbol=AAPL**
     * The symbol can be changed to get different results
+        * Try MSFT, IBM, CRM, GOEV, AVAV, TJX, CRM, V
 
 
 

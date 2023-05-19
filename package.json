@@ -4,8 +4,8 @@
   "description": "ExpressJS asyncronous pub-sub using Nats.io",
   "scripts": {
     "ts-node": "ts-node",
-    "api" : "ts-node -r dotenv/config ./src/api.ts",
-    "daily-adjusted-subscription" : "ts-node -r dotenv/config ./src/alpha-vantage/daily-adjusted.subscription.ts"
+    "api" : "ts-node -r dotenv/config --esm ./src/api.ts",
+    "daily-adjusted-subscription" : "ts-node -r dotenv/config --esm ./src/alpha-vantage/daily-adjusted.subscription.ts"
   },
   "author": "Kamau Washington",
   "license": "MIT",
@@ -20,5 +20,6 @@
     "axios": "^1.4.0",
     "express": "^4.18.2",
     "nats": "^2.13.1"
-  }
+  },
+  "type": "module"
 }
