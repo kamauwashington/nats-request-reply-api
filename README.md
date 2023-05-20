@@ -9,7 +9,7 @@ a subscriber.
 
 This pattern is useful in many ways, but there are a few freebies from this implementation :
 * Any programming language can use Nats.io API to initiate Request/Response directly with Nats.io bypassing HTTP entirely
-* The API can be written in NodeJS|Go|Python|Java|.NET Core, and the Subscriber can be written in NodeJS|Go|Python|Java|.NET Core
+* The API can be written in NodeJS|Go|Python|Java|.NET Core C#, and the Subscriber can be written in NodeJS|Go|Python|Java|.NET Core C#
 * The subscriber can be swapped out and or A|B tested
 * The Nats Subject can be subscribed to by (n) additional subscribers, for activities like logging, direct push to a DataLake, and so on.
 
